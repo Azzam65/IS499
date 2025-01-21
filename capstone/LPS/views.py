@@ -1,5 +1,14 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
-def home(request):
-    return render(request, 'home.html')
+def landingpage(request):
+    return render(request, 'landingpage.html')
+
+def profilepage(request):
+    return render(request, 'profilepage.html')
+
+def checkoutpage(request):
+    return render(request, 'checkoutpage.html')
+
+def searchingpage(request):
+    return render(request, 'searchingpage.html')
