@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>License Plate Shop</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    
-</head>
-<body>
-    <h1>Banner </h1>
-    <nav class = "navbar">
-        <ul>
-            <li> <a href="">Home</a>
-            <li> <a href="">Auction</a>
-            <li> <a href="">forsale</a>
-              
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h3>this is the homepage</h3>
-        <p>lorem</p>
-    </main>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h3>This is the homepage</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+{% endblock %}

@@ -1,14 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
-def landingpage(request):
+def home(request):
     return render(request, 'landingpage.html')
 
-def profilepage(request):
-    return render(request, 'profilepage.html')
+def auction(request):
+    return render(request, 'auction.html')
 
-def checkoutpage(request):
-    return render(request, 'checkoutpage.html')
-
-def searchingpage(request):
-    return render(request, 'searchingpage.html')
+def forsale(request):
+    return render(request, 'forsale.html')
