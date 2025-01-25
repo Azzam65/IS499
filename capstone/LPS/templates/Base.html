@@ -6,16 +6,25 @@
     <title>{% block title %}Home{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% block extra_css %}{% endblock %}
+
 </head>
 <body>
     <header>
-        <h1>Banner</h1>
         <nav class="navbar">
-            <ul>
-                <li><a href="{% url 'landingpage' %}">Home</a></li>
-                <li><a href="{% url 'auction' %}">Auction</a></li>
-                <li><a href="{% url 'forsale' %}">For Sale</a></li>
-            </ul>
+            <div class="navbar-left">
+                <ul>
+                    <li><a href="#home"><img src="{% static 'img/home.jpg' %}" alt="Home" class="nav-icon"></a></li>
+                    <li><a href="{% url 'auction' %}">Auction</a></li>
+                    <li><a href="{% url 'forsale' %}">For Sale</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="{% url 'addlisting' %}">add listing</a></li>
+                    <li><a href="#Profile"><img src="{% static 'img/profile.webp' %}" alt="Profile" class="nav-profile"></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>

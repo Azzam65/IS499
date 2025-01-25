@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Listing{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+<h3>Add a New License Plate Listing</h3>
+<form method="post" class="addlisting">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
