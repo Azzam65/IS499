@@ -1,8 +1,15 @@
-{% extends 'base.html' %}
+{% extends 'Base.html' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}User List{% endblock %}
 
 {% block content %}
-<h3>This is the homepage</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3>User List</h3>
+<ul>
+    {% for user in users %}
+        <li>ID: {{ user.id }} - Username: {{ user.username }}</li>
+    {% endfor %}
+</ul>
+
+<!-- Existing landing page content -->
+...existing code...
 {% endblock %}
