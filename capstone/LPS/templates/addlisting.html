@@ -2,8 +2,12 @@
 
 {% block title %}Add Listing{% endblock %}
 
-{% block extra_css %}
-{% endblock %}
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
 
 {% block content %}
 <h3>Add a New License Plate Listing</h3>
